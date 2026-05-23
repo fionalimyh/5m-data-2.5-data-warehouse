@@ -1,0 +1,59 @@
+[0m09:41:34.864837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436be849450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436be842a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436be84a790>]}
+
+
+============================== 09:41:34.869553 | 7c4fe786-59f5-4904-b073-28bb7b3237e5 ==============================
+[0m09:41:34.869553 [info ] [MainThread]: Running with dbt=1.10.9
+[0m09:41:34.870193 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'write_json': 'True', 'profiles_dir': '/home/fionalyh/.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'warn_error': 'None', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'invocation_command': 'dbt init my_dbt_test', 'version_check': 'True', 'printer_width': '80', 'empty': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'debug': 'False', 'log_path': 'logs', 'partial_parse': 'True'}
+[0m09:41:34.894334 [info ] [MainThread]: Creating dbt configuration folder at /home/fionalyh/.dbt
+[0m09:41:34.898535 [debug] [MainThread]: Starter project path: /home/fionalyh/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m09:41:34.920012 [info ] [MainThread]: 
+Your new dbt project "my_dbt_test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:41:34.920803 [info ] [MainThread]: Setting up your profile.
+[0m09:43:04.220112 [info ] [MainThread]: Profile my_dbt_test written to /home/fionalyh/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:43:04.221396 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 89.44579, "process_in_blocks": "453696", "process_kernel_time": 10.497538, "process_mem_max_rss": "374344", "process_out_blocks": "104", "process_user_time": 10.066347}
+[0m09:43:04.222221 [debug] [MainThread]: Command `dbt init` succeeded at 09:43:04.222110 after 89.45 seconds
+[0m09:43:04.222692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436be84b2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436be84ab90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7436c31f9bd0>]}
+[0m09:43:04.223249 [debug] [MainThread]: Flushing usage events
+[0m09:43:05.841514 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:09:42.740027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebc1c4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebb30da10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebb30e110>]}
+
+
+============================== 10:09:42.743622 | d9b46b6b-8fba-4043-b327-87723576a2c9 ==============================
+[0m10:09:42.743622 [info ] [MainThread]: Running with dbt=1.10.9
+[0m10:09:42.744696 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'write_json': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'log_format': 'default', 'profiles_dir': '/home/fionalyh/.dbt', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'warn_error': 'None', 'target_path': 'None', 'static_parser': 'True', 'introspect': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'quiet': 'False', 'version_check': 'True', 'invocation_command': 'dbt init my_dbt_test --skip-profile-setup', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m10:09:42.755245 [debug] [MainThread]: Starter project path: /home/fionalyh/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m10:09:42.767313 [info ] [MainThread]: 
+Your new dbt project "my_dbt_test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:09:42.768605 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.10908782, "process_in_blocks": "184", "process_kernel_time": 0.542259, "process_mem_max_rss": "100892", "process_out_blocks": "80", "process_user_time": 1.423429}
+[0m10:09:42.769219 [debug] [MainThread]: Command `dbt init` succeeded at 10:09:42.769106 after 0.11 seconds
+[0m10:09:42.769681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebb30e110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebfc8dd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x712ebfae3690>]}
+[0m10:09:42.770137 [debug] [MainThread]: Flushing usage events
+[0m10:09:43.817130 [debug] [MainThread]: An error was encountered while trying to flush usage events
