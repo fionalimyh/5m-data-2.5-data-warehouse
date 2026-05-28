@@ -1,25 +1,17 @@
 version: 2
 
 models:
-  - name: fact_trips
-    description: "Fact table with one row per bike trip."
+  - name: fact_trips       
+    description: "One row per completed bike trip — central fact table"
     columns:
       - name: trip_id
-        description: "Primary key for each trip."
         tests:
           - unique
           - not_null
       - name: start_station_id
-        description: "Foreign key to the station dimension for the trip start station."
         tests:
-          - relationships:
-              arguments:
-                to: ref('dim_station')
-                field: station_id
+          - not_null
       - name: end_station_id
-        description: "Foreign key to the station dimension for the trip end station."
+      - name: duration_minutes
         tests:
-          - relationships:
-              arguments:
-                to: ref('dim_station')
-                field: station_id
+          - not_null

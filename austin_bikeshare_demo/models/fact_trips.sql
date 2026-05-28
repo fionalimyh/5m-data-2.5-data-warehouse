@@ -9,3 +9,4 @@ SELECT
     end_station_name,
     duration_minutes
 FROM {{ source('austin_bikeshare', 'bikeshare_trips') }}
+WHERE start_station_id IS NOT NULL

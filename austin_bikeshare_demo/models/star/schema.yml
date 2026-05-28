@@ -1,11 +1,22 @@
 version: 2
 
 models:
-  - name: dim_station
-    description: "Dimension table with one row per station."
+  - name: dim_stations
+    description: "One row per bikeshare station with location metadata"
     columns:
       - name: station_id
-        description: "Primary key for each station."
+        description: "Natural key from source"
         tests:
           - unique
           - not_null
+      - name: station_name
+        tests:
+          - not_null
+      - name: location
+      - name: address
+      - name: council_district
+      - name: modified_date
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['active', 'closed', 'moved']

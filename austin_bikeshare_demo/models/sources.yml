@@ -6,4 +6,33 @@ sources:
     schema: austin_bikeshare
     tables:
       - name: bikeshare_trips
+        description: "Raw trip records from Austin bikeshare programme"
+        columns:
+          - name: trip_id
+            description: "Unique trip identifier"
+            tests:
+              - unique
+              - not_null
+
+          - name: start_time
+            tests:
+              - not_null
+
+          - name: start_station_id
+
+          - name: end_station_id  
+
+          - name: duration_minutes
+            tests:
+              - not_null
       - name: bikeshare_stations
+        description: "Station metadata"
+        columns:
+          - name: station_id
+            tests:
+              - unique
+              - not_null
+          - name: name
+          - name: latitude
+          - name: longitude
+          - name: status  
