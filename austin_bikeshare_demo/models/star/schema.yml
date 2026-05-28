@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_station
+    description: "Dimension table with one row per station."
+    columns:
+      - name: station_id
+        description: "Primary key for each station."
+        tests:
+          - unique
+          - not_null

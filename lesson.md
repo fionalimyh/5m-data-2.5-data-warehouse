@@ -89,7 +89,7 @@ Next, load the seed CSV files:
 ```bash
 dbt seed
 ```
-
+seed is for mapping table/lookup table
 ---
 
 #### Exploring the Project Structure
