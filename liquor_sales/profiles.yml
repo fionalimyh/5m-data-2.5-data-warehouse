@@ -7,7 +7,7 @@ liquor_sales:
       location: US
       method: oauth
       priority: interactive
-      project: your-gcp-project-id
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
       threads: 2
       type: bigquery
   target: dev
